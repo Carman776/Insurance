@@ -1,0 +1,55 @@
+{
+	"info": {
+		"_postman_id": "66b51de9-a1e1-4389-ae0e-dcb118e4d094",
+		"name": "Pruebas",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"registerData\" :  \"{\\\"NumeroPoliza\\\": \\\"0001\\\",\\\"NombreCliente\\\":\\\"Andres Cardenas\\\",        \\\"IdentificacionCliente\\\":\\\"1053222333\\\",\\\"FechaNacimiento\\\":\\\"07/06/1995\\\",        \\\"FechaDeTomaPoliza\\\": \\\"27/04/2023\\\" ,\\\"CoberturasPoliza\\\":\\\"1\\\",\\\"ValorMaximoPoliza\\\": \\\"25000000\\\",\\\"NombrePoliza\\\": \\\"Poliza prueba\\\",\\\"CiudadResidencia\\\": \\\"Bogotá D.C.\\\",    \\\"DireccionResidencia\\\": \\\"Carrera 45 #164-30 apartamento 601\\\",\\\"PlacaVehiculo\\\": \\\"BJK651\\\",    \\\"ModeloVehiculo\\\": \\\"2022\\\",\\\"Inspeccion\\\": \\\"true\\\"\\r\\n }\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7261/api/Insurance/Register",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7261",
+					"path": [
+						"api",
+						"Insurance",
+						"Register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FindQuery",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "ValidationQuery",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
